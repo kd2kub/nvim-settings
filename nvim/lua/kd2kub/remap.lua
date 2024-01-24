@@ -1,6 +1,7 @@
 --resources
 --https://github.com/ThePrimeagen/init.lua/blob/master/lua/theprimeagen/remap.lua
 --https://www.youtube.com/watch?v=w7i4amO_zaE
+--Last edited: 01/24/2024
 --need map leader in here
 vim.g.mapleader = " "
 vim.keymap.set("n","<leader>pv",vim.cmd.Ex)
@@ -21,7 +22,7 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
---deletes highlighted word into void register then pastes
+--Replace-paste yanked text without yanking deleted lines.
 --Greatest remap Ever!!
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
